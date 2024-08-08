@@ -19,4 +19,7 @@ public class Member {
     private String pw;
     @Column(name="m_nick",length=50)
     private String nick;
+    @Enumerated(EnumType.STRING)
+    @Column(name = "m_role")
+    private Role role;
 }
